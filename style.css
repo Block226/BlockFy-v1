@@ -181,3 +181,11 @@ nav.main-nav a.active{ color: var(--teal-deep); font-weight: 700; }
   .hero .notebook{ grid-template-columns: 1fr; gap: 28px; }
   .hero .hero-image{ order: -1; }
 }
+.mon-bouton{
+  display: inline-block;   /* أساسي بش يقبل padding و background */
+  background: teal;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
