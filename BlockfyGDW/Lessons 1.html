@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ما هو HTML وكيف يعمل الويب؟ — الدرس 01 | BLOCKFY</title>
+<meta name="description" content="شرح مبسّط لما هو HTML، والفرق بينه وبين CSS وJavaScript، وكيف يتحول ملفك إلى صفحة ويب.">
+<meta name="theme-color" content="#F6F5F1">
+<link rel="icon" href="1776730864707.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar"></div>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="brand"><span class="dot"></span> BLOCKFY</a>
+    <nav class="main-nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="Lessons.html" class="active">الدروس</a>
+      <a href="Lessons 1.html">ابدأ من هنا</a>
+    </nav>
+    <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="lesson-hero">
+  <div class="notebook">
+    <span class="eyebrow">Lesson 01 / 03</span>
+    <h1>ما هو HTML وكيف يعمل الويب؟</h1>
+    <div class="lesson-meta">
+      <span>⏱ قراءة 6 دقائق</span>
+      <span>📁 أساسيات</span>
+    </div>
+  </div>
+</div>
+
+<article class="article">
+
+  <p>
+    قبل أن تكتب وسمًا واحدًا، من المفيد أن تفهم ماذا يحدث فعليًا حين تفتح موقعًا في متصفحك.
+    هذا الدرس لا يحتوي على أكواد تكتبها، بل على الصورة الكاملة التي ستجعل كل الدروس القادمة منطقية.
+  </p>
+
+  <h2>الملف الذي يقرأه المتصفح</h2>
+  <p>
+    أي صفحة ويب تراها، هي في الأساس ملف نصي بسيط، امتداده <code>.html</code>، محفوظ على جهاز يسمى
+    "خادم" (Server). حين تكتب عنوان موقع في المتصفح، يطلب المتصفح هذا الملف من الخادم، يستلمه،
+    ثم "يقرأه" ويحوّله إلى الشكل المرئي الذي تراه: عناوين، فقرات، صور، أزرار.
+  </p>
+  <p>
+    HTML هو اختصار لـ <strong>HyperText Markup Language</strong>، وهو ليس لغة برمجة بالمعنى
+    الذي يخطر في بالك (لا يوجد فيه شروط أو حسابات)، بل لغة <em>توصيف</em>. مهمتها الوحيدة أن
+    تخبر المتصفح: "هذا النص عنوان"، "هذه صورة"، "هذا رابط يقود إلى صفحة أخرى".
+  </p>
+
+  <div class="callout">
+    <strong>فكرة توضيحية:</strong> تخيل HTML كإخوانك في مطبخ. أنت لا تطبخ بنفسك، بل تكتب
+    وصفة واضحة الخطوات ("قطّع البصل، اسلق الماء")، والمتصفح هو من "يطبخ" النتيجة النهائية
+    التي تشاهدها على الشاشة.
+  </div>
+
+  <h2>HTML وحدها لا تكفي</h2>
+  <p>
+    غالبًا ستسمع ثلاثة أسماء معًا: HTML وCSS وJavaScript. كل واحدة لها مهمة منفصلة تمامًا،
+    ومن المهم أن تفرّق بينها من اليوم الأول:
+  </p>
+  <ul>
+    <li><strong>HTML</strong> — الهيكل والمحتوى: أي عنصر موجود، وأين يقع بالترتيب في الصفحة.</li>
+    <li><strong>CSS</strong> — المظهر: الألوان، الخطوط، المسافات، وترتيب العناصر بصريًا.</li>
+    <li><strong>JavaScript</strong> — السلوك: ما يحدث عند الضغط على زر، أو التحقق من نموذج تسجيل.</li>
+  </ul>
+  <p>
+    في هذه السلسلة نبدأ بـ HTML وحدها، لأنها الأساس الذي يُبنى عليه كل شيء آخر. لا تنسّق بلا هيكل.
+  </p>
+
+  <h2>الوسوم: اللبنة الأساسية</h2>
+  <p>
+    HTML تتكوّن من "وسوم" (Tags)، وهي كلمات محاطة بأقواس زاوية. كل وسم يفتح بـ <code>&lt;اسم&gt;</code>
+    وغالبًا يُغلق بـ <code>&lt;/اسم&gt;</code>. كل ما بين الفتح والإغلاق هو "محتوى" هذا الوسم.
+  </p>
+
+  <div class="code-block">
+    <div class="cb-head"><span>example.html</span><button class="copy">نسخ</button></div>
+    <pre><span class="tag">&lt;p&gt;</span>هذه فقرة نصية عادية.<span class="tag">&lt;/p&gt;</span></pre>
+  </div>
+
+  <p>
+    هنا الوسم هو <code>p</code> (اختصار Paragraph)، وقد أخبرنا المتصفح: "اعرض النص الذي بينهما
+    كفقرة مستقلة". لن تحتاج لحفظ كل الوسوم الآن؛ ستتعلم أكثرها استخدامًا في الدرس الثالث.
+  </p>
+
+  <h2>ماذا تحتاج فعليًا لتبدأ؟</h2>
+  <p>لا شيء معقّد. تحتاج فقط إلى:</p>
+  <ol>
+    <li>محرر نصوص، مثل Notepad المدمج في ويندوز، أو أداة أفضل مجانية مثل VS Code.<

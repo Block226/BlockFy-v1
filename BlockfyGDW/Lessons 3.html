@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أهم 10 وسوم يحتاجها كل مبتدئ — الدرس 03 | BLOCKFY</title>
+<meta name="description" content="أهم وسوم HTML التي ستستخدمها في كل صفحة تقريبًا: العناوين، الفقرات، الروابط، الصور، والقوائم.">
+<meta name="theme-color" content="#F6F5F1">
+<link rel="icon" href="1776730864707.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar"></div>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="brand"><span class="dot"></span> BLOCKFY</a>
+    <nav class="main-nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="Lessons.html" class="active">الدروس</a>
+      <a href="Lessons 1.html">ابدأ من هنا</a>
+    </nav>
+    <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="lesson-hero">
+  <div class="notebook">
+    <span class="eyebrow">Lesson 03 / 03</span>
+    <h1>أهم 10 وسوم يحتاجها كل مبتدئ</h1>
+    <div class="lesson-meta">
+      <span>⏱ قراءة 10 دقائق</span>
+      <span>📁 الوسوم</span>
+    </div>
+  </div>
+</div>
+
+<article class="article">
+
+  <p>
+    بعد أن كتبت هيكل صفحتك الأساسي في الدرس الماضي، حان وقت تعبئتها بمحتوى حقيقي.
+    هذه الوسوم العشرة تغطي تقريبًا 90% من احتياجات أي صفحة ويب بسيطة.
+  </p>
+
+  <h2>1. العناوين: من h1 إلى h6</h2>
+  <p>
+    تستخدم لعناوين الأقسام، بترتيب أهمية من الأكبر <code>h1</code> إلى الأصغر <code>h6</code>.
+    القاعدة: استخدم <code>h1</code> واحدًا فقط في الصفحة، لأنه العنوان الرئيسي لها.
+  </p>
+  <div class="code-block">
+    <div class="cb-head"><span>headings.html</span><button class="copy">نسخ</button></div>
+    <pre><span class="tag">&lt;h1&gt;</span>عنوان الصفحة الرئيسي<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>عنوان قسم فرعي<span class="tag">&lt;/h2&gt;</span></pre>
+  </div>
+
+  <h2>2. الفقرات: p</h2>
+  <p>لأي نص عادي متصل. المتصفح يضيف مسافة قبل وبعد كل فقرة تلقائيًا.</p>
+  <div class="code-block">
+    <div class="cb-head"><span>paragraph.html</span><button class="copy">نسخ</button></div>
+    <pre><span class="tag">&lt;p&gt;</span>هذه فقرة تشرح فكرة واحدة بوضوح.<span class="tag">&lt;/p&gt;</span></pre>
+  </div>
+
+  <h2>3. الروابط: a</h2>
+  <p>
+    الوسم الذي يجعل الويب "ويب" فعلًا — يربط صفحة بأخرى. الخاصية <code>href</code> تحدد الوجهة.
+  </p>
+  <div class="code-block">
+    <div class="cb-head"><span>link.html</span><button class="copy">نسخ</button></div>
+    <pre><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"lessons.html"</span><span class="tag">&gt;</span>اذهب إلى الدروس<span class="tag">&lt;/a&gt;</span></pre>
+  </div>
+
+  <h2>4. الصور: img</h2>
+  <p>
+    وسم خاص لا يُغلق بوسم نهاية. يحتاج <code>src</code> (مصدر الصورة) و<code>alt</code>
+    (نص وصفي يظهر إن لم تُحمّل الصورة، ومهم أيضًا لضعاف البصر ولمحركات البحث).
+  </p>
+  <div class="code-block">
+    <div class="cb-head"><span>image.html</span><button class="copy">نسخ</button></div>
+    <pre><span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="str">"logo.png"</span> <span class="attr">alt</span>=<span class="str">"شعار الموقع"</span><span class="tag">&gt;</span></pre>
+  </div>
+
+  <div class="callout">
+    <strong>تذكّر:</strong> لا تترك <code>alt</code> فارغًا في أي صورة ذات معنى. متصفحات
+    القراءة الصوتية لضعاف البصر تعتمد عليه بالكامل لفهم محتوى الصورة.
+  </div>
+
+  <h2>5 و 6. القوائم: ul و ol</h2>
+  <p>
+    <code>ul</code> لقائمة غير مرتبة (نقاط)، و<code>ol</code> لقائمة مرقّمة. كل عنصر بداخلها
+    يوضع في وسم <code>li</code>.
+  </p>
+  <div class="code-block">
+    <div class="cb-head"><span>l
